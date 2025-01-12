@@ -11,4 +11,4 @@ function callAction(action) {
 }
 
 // =====================================================
-callAction(product.showPrice)
+callAction(product.showPrice.bind(product))
