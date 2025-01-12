@@ -8,3 +8,12 @@ const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
  // banana: 2,
  // orange: 1
 //}
+const result = fruits.reduce((acc, item)=>{
+    if (acc[item]){
+        acc[item] += 1;
+    } else {
+        acc[item] = 1
+    }
+return acc
+},{});
+console.log(result)
