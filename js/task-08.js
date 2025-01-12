@@ -7,4 +7,6 @@ const cart = [
 ];
 //Завдання: За допомогою reduce підрахуйте загальну вартість усіх товарів у кошику.
 //Очікуваний результат:
-//14.8
+//13.8
+const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0) 
+console.log(total);
